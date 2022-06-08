@@ -1,0 +1,8 @@
+site_name: "simplequarkus"
+site_description: "Simple app"
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core

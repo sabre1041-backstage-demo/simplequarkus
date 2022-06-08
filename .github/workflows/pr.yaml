@@ -1,0 +1,12 @@
+name: pull-request
+on:
+  pull_request:
+    branches:
+      - master
+      - main
+
+jobs:
+  call-workflow:
+    uses: sabre1041-backstage-demo/shared-workflows/.github/workflows/quarkus-ci.yaml@main
+    with:
+      app: simpleapp

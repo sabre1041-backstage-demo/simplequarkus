@@ -1,0 +1,14 @@
+name: push
+on: 
+  push:
+    branches:
+      - master
+      - main
+    tags:        
+      - v*
+
+jobs:
+  call-workflow:
+    uses: sabre1041-backstage-demo/shared-workflows/.github/workflows/quarkus-ci-cd.yaml@main
+    with:
+      app: simpleapp

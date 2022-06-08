@@ -1,0 +1,4 @@
+quarkus-run:
+  fullnameOverride: simplequarkus
+  image:
+    repository: quay.io/sabre1041-backstage-demo/simplequarkus
